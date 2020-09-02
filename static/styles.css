@@ -1,0 +1,66 @@
+.body{
+    margin: 0;
+    font: Arial;
+    font-size: 1.5rem;
+    color: #262d3a;
+
+}
+
+.logoBar, .footer{
+    height: 4vw;
+    background-color: whitesmoke;
+}
+.logos{
+    height: 2vw;
+}
+.navigation{
+    position:absolute;
+    top:0.4vw;
+    right:0;
+    display:inline
+}
+.navigationButton{
+    position:relative;
+    display: inline;
+    float: right;
+    margin: 1vw;
+}
+.topSection{
+    height: 34vw;
+}
+.topPicture{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.textBox{
+    background-color: whitesmoke;
+    display: inline-block;
+    position: absolute;
+    top : 8vw;
+    left: 8vw;
+    max-width: 30%;
+    opacity: 0.8;
+    padding: 1vw
+}
+.linkPlain, .boxLink{
+    text-decoration: none;
+    color: #262d3a;
+   
+}
+
+.boxLink {
+    margin: 5vw;
+    display: inline-block;
+   
+}
+
+.boxImage{
+    width: 450px;
+}
+
+.legalText{
+    font-size: 0.5rem;
+}
