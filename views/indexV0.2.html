@@ -1,17 +1,5 @@
 <!DOCTYPE html>
-
-<script>
-    function mainSize(){
-        if(window.screen.width < 1320){
-            var element = document.getElementById("topPicture");
-            var element2 = document.getElementById("topSection");
-            element.style.left = "-300px";
-            element.style.width = "130.5%"
-            element2.style.height = "46.5vw"
-        }
-    }
-</script>
-
+<script src ="../static/scripts.js"></script>
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Bionetics health test identifies underlying causes of illness. This health test is used for men&rsquo;s health, women&rsquo;s health, sickness, illness, head ache, stomach ache, pain, lethargy, bloated, bloating">
@@ -20,10 +8,11 @@
 </head>
 
 <body class = "body">
-    <header><!--header bar contains logos, navigation and login system-->
+    
+    <header id = "myHeader"><!--header bar contains logos, navigation and login system-->
 
         <div id = "logo bar" class = "logoBar" > <!--logos-->
-            <div style = "position:relative; top: 25%; width: 17vw"> 
+            <div style = "position:relative; top: 25%; width: 19vw"> 
                 <a href="https://bionetics.co.uk/" class = "linkPlain">
                     <img src = "../static/images/Logo.jpg" alt = "Bionetics the key to natural wellbeing" class = "logos">
                     <img src = "../static/images/15years.jpg" alt = "15 years of Bionetics Ltd" class = "logos">
@@ -31,7 +20,7 @@
             </div>
 
            
-            <div align = "center" class = "navigation"> <!--Navigation-->
+            <nav align = "center" class = "navigation"> <!--Navigation-->
                 <nav class = "navigationButton">
                     <div >
                         <a class = "linkPlain" href="https://bionetics.co.uk/" > Log In</a>
@@ -62,11 +51,11 @@
                     </div>
     
                 </nav>
-            </div>
+            </nav>
         </div>
     </header>
    
-    <main>
+    <main class = "content">
         <section id = "topSection" class = "topSection">
             <img src = "../static/images/flowers.jpg" id ="topPicture" class = "topPicture">
             <body onload = "mainSize()"> </body>
@@ -105,6 +94,48 @@
                     <img src = "../static/images/pillPoppin.jpg" class = "boxImage">
                 </a>
             </div>
+        </section>
+
+        <div align = "center" style = "background-color: whitesmoke">
+            
+            <div class = "testimonieBox">
+                
+                <P class = "testimonieText">
+                    I must say that I have been extremely pleased with the outcome so far and have recommended yourselves to several people."
+                   
+                </P>
+                <p class = "testimonieText">
+                    Carole - Devon
+                </p>
+                <img src = "../static/images/fiveStar.png" class = "rating" >
+            </div>
+            <div class = "testimonieBox">
+                
+                <P class = "testimonieText">
+                    After 10 days he began to feel some improvement, and by the end of the course was back at work after 5 months of being unable to do hardly anything! Thank you so very, very much - we are delighted.
+                    
+                </P>
+                <p class = "testimonieText">
+                    Ann - Dorset
+                </p>
+                <img src = "../static/images/fiveStar.png" class = "rating">
+            </div>
+            <div class = "testimonieBox">
+                
+                <P class = "testimonieText">
+                    I can now plan things in advance and expect to be able to carry them through. 
+                    
+                </P>
+                <p class = "testimonieText">
+                    
+                    Lisa - Berkshire
+                </p>
+                <img src = "../static/images/fiveStar.png" class = "rating">
+            </div>
+           
+        </div>
+
+        <section align = "center">
             <div class = "boxLink">
                 <a href="https://bionetics.co.uk/">
                     <img src = "../static/images/pillPoppin.jpg" class = "boxImage">
@@ -129,7 +160,9 @@
 		
         <div>
             &copy;Bionetics 2005 | <a  href="bionetics/termsandconditions.htm">terms &amp; conditions</a> | <a  href="bionetics/privacy.htm">privacy</a> 
-            <p class = "legalText" >*These testimonies are personal opinions and experiences only and do not constitute treatments or cures of any specific symptoms or conditions.</p>
+            <p class = "legalText" >*Disclaimer: The services offered on this website are not diagnostic or designed to treat or cure any disease, illness or condition. 
+                The programs are based around dietary and nutritional programs designed to support the body’s natural processes. 
+                If you have any illness or condition or you are concerned about your health, you should see a health professional.</p>
         </div>
              
         
