@@ -5,6 +5,9 @@
     color: #262d3a;
 
 }
+.header{
+    z-index: 999;
+}
 .logoBar, .footer{
     height: 4vw;
     background-color: whitesmoke;
@@ -45,6 +48,7 @@
     max-width: 600px;
     opacity: 0.8;
     padding: 1vw;
+    z-index: 100;
 }
 .testimonieText{
     width: 400px;
