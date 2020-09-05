@@ -50,12 +50,15 @@
     padding: 1vw;
     z-index: 100;
 }
+.testimonieBlock{
+    background-color:lightblue;
+}
 .testimonieText{
     width: 400px;
     
 }
 .testimonieBox{
-    margin: 3vw; 
+    margin: 4vw; 
     display: inline-block; 
 }
 
@@ -87,8 +90,12 @@
     position: fixed;
     top: 0;
     width: 100%
-  }
+}
   
-  .sticky + .content{
+.sticky + .content{
     padding-top: 4vw;
-  }
+}
+
+.footer{
+    padding: 1vw;
+}
