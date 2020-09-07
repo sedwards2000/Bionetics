@@ -110,20 +110,27 @@
 
 .howToImages{
     display: inline-block; 
-    margin: 2vw; 
-    width: 6vw;
+    margin: 2vw;
+    width: 100px;
 }
 .howToImage{
-    width: 6vw;
+    width: 100px;
 }
 
 .howToList{
    width: 40%; 
-   margin: 3vw; 
+   margin-left: 3vw;
+   
    display: inline-block;
 }
 
 .howToVideo{
     display: inline-block; 
-    margin: 3vw;
+    margin-left: 5vw;
+}
+ 
+.heading{
+    margin: 0; 
+    font-size:4rem;
+    margin-bottom: 2vw
 }
