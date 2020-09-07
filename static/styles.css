@@ -112,16 +112,20 @@
     display: inline-block; 
     margin: 2vw;
     width: 100px;
+    position: relative;
+    bottom: 2.5vw
 }
 .howToImage{
     width: 100px;
+    margin: 0.5vw
 }
 
 .howToList{
    width: 40%; 
    margin-left: 3vw;
-   
    display: inline-block;
+   position: relative;
+   bottom: 3vw
 }
 
 .howToVideo{
