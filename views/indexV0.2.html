@@ -12,7 +12,7 @@
     <header id = "myHeader" class = "header"><!--header bar contains logos, navigation and login system-->
 
         <div id = "logo bar" class = "logoBar" > <!--logos-->
-            <div style = "position:relative; top: 25%; width: 19vw"> 
+            <div class = "logoLink"> 
                 <a href="https://bionetics.co.uk/" class = "linkPlain">
                     <img src = "../static/images/Logo.jpg" alt = "Bionetics the key to natural wellbeing" class = "logos">
                     <img src = "../static/images/15years.jpg" alt = "15 years of Bionetics Ltd" class = "logos">
@@ -56,7 +56,7 @@
     </header>
    
     <main class = "content">
-        <section id = "topSection" class = "topSection">
+        <section id = "topSection" class = "topSection"><!--top image and text-->
             <img src = "../static/images/flowers.jpg" id ="topPicture" class = "topPicture">
             <body onload = "mainSize()"> </body>
             <body onresize = "mainSize()"> </body>
@@ -76,7 +76,7 @@
             
         </section>
 
-        <section align = "center" >
+        <section align = "center" ><!--image links-->
             <div class = "boxLink" >
                 <a href="https://bionetics.co.uk/">
                     <img src = "../static/images/pillPoppin.jpg" class = "boxImage">
@@ -94,7 +94,7 @@
             </div>
         </section>
 
-        <div align = "center" class = "testimonieBlock">
+        <div align = "center" class = "pageBlock"><!--Testimonies-->
             
             <div class = "testimonieBox">
                 
@@ -107,6 +107,7 @@
                 </p>
                 <img src = "../static/images/fiveStar.png" class = "rating" >
             </div>
+
             <div class = "testimonieBox">
                 
                 <P class = "testimonieText">
@@ -133,7 +134,7 @@
            
         </div>
 
-        <section align = "center">
+        <section align = "center"> <!--image links-->
             <div class = "boxLink">
                 <a href="https://bionetics.co.uk/">
                     <img src = "../static/images/pillPoppin.jpg" class = "boxImage">
@@ -150,15 +151,35 @@
                 </a>
             </div>
         </section>
-        
-        
+
+        <div class = "pageBlock"><!--how it works-->
+            <div class = "howToImages">
+                <img src = "../static/images/basket.png" class = "howToImage">
+                <img src = "../static/images/tweezers.png" class = "howToImage">
+                <img src = "../static/images/envalope.png" class = "howToImage">
+            </div>
+            <div class = "howToList">
+                <ol >
+                    <li>Start by either buying a test online </li>
+                    <li>Pull the hair root sample preferably from your head. </li>
+                    <li>We need 4 strands of hair with the root attached because we are testing the root. </li>
+                    <li>Attach the sample to our application form. </li>
+                    <li>Send in the form and within 7 working days of us receiving your sample you will have your report to read through. You can collect it online or request a postal version. </li>
+                    <li>Then call us to arrange your 15 minute FREE consultation over the phone with one of our in house practitioners. </li>
+                    <li>Its as simple as that</li>
+                  </ol>
+            </div>
+            <div class = "howToVideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sYbJb1ul0iQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
 
     <footer align="center" class = "footer" class = "footer">
 		
         <div>
             &copy;Bionetics 2005 | <a  href="bionetics/termsandconditions.htm">terms &amp; conditions</a> | <a  href="bionetics/privacy.htm">privacy</a> 
-            <p class = "legalText" >*Disclaimer: The services offered on this website are not diagnostic or designed to treat or cure any disease, illness or condition. 
+            <p class = "legalText" >Disclaimer: The services offered on this website are not diagnostic or designed to treat or cure any disease, illness or condition. 
                 The programs are based around dietary and nutritional programs designed to support the body’s natural processes. 
                 If you have any illness or condition or you are concerned about your health, you should see a health professional.</p>
         </div>

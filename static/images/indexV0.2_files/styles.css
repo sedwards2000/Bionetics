@@ -50,7 +50,7 @@
     padding: 1vw;
     z-index: 100;
 }
-.pageBlock{
+.testimonieBlock{
     background-color:lightblue;
 }
 .testimonieText{
@@ -106,24 +106,4 @@
     position:relative; 
     top: 25%; 
     width: 19vw"
-}
-
-.howToImages{
-    display: inline-block; 
-    margin: 2vw; 
-    width: 6vw;
-}
-.howToImage{
-    width: 6vw;
-}
-
-.howToList{
-   width: 40%; 
-   margin: 3vw; 
-   display: inline-block;
-}
-
-.howToVideo{
-    display: inline-block; 
-    margin: 3vw;
 }
