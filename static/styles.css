@@ -7,29 +7,43 @@
 
 }
 
+.heading{
+    margin: 0;
+    font-size:3rem;
+    
+}
 
+.navigationBar{
+    background-color: #f9da03;
+   
+}
 
 .header{
     z-index: 999;
     
 }
+
 .logoBar{
     background-color: whitesmoke;
 }
+
 .logoBlock{
     display:inline-block;
 }
+
 .logoLink{
     width: 19vw"
 }
+
 .logos{
     height: 60px;
     margin: 7.5px;
 }
+
 .logInButton{
     display: inline-block; 
     float:right; 
-    margin: 25px; 
+    margin-top: 25px;
     margin-right: 75px
 }
 .navigation{
@@ -96,7 +110,7 @@
     z-index: -1;
 }
 .textBox{
-    background-color: whitesmoke;
+    background-color: #f5f5f5;
     display: inline-block;
     position: absolute;
     top : 8vw;
@@ -160,6 +174,7 @@
 
 .howToBar{
     background-color: #f9da03;
+    display: inline-block
 }
 .howToBox{
     display:inline-block;
@@ -179,27 +194,18 @@
     margin: 0.5vw
 }
 
-.howToList{
-   width: 40%; 
-   margin-left: 3vw;
-   display: inline-block;
-   position: relative;
-   bottom: 3vw
-}
-
-.howToVideo{
-    display: inline-block; 
-    margin-left: 5vw;
-}
- 
-.heading{
-    margin: 0;
-    font-size:3rem;
+.productBar{
+    
+    background-color:lightblue;
+    padding: 3vw
     
 }
-.navigationBar{
-    background-color: #f9da03;
-    height: 2vw;
+.productBox{
+    width:300px;
+    background-color: rgb(182, 182, 212);
+    display:inline-block;
+    border-radius: 10px;
+    padding: 10px
 }
 
 .footer{
