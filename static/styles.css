@@ -1,40 +1,96 @@
+
 .body{
     margin: 0;
-    font: Arial;
+    font-family: Arial;
     font-size: 1.5rem;
     color: #262d3a;
 
 }
+
+
+
 .header{
     z-index: 999;
+    
 }
-.logoBar, .footer{
-    height: 4vw;
+.logoBar{
     background-color: whitesmoke;
 }
+.logoBlock{
+    display:inline-block;
+}
+.logoLink{
+    width: 19vw"
+}
 .logos{
-    height: 2vw;
-    margin-left: 1vw;
+    height: 60px;
+    margin: 7.5px;
+}
+.logInButton{
+    display: inline-block; 
+    float:right; 
+    margin: 25px; 
+    margin-right: 75px
 }
 .navigation{
-    position:absolute;
-    top:0.4vw;
-    right:0;
+    width: 100%; 
+    height: 50px; 
+    background-color: #f9da03
     
 }
 .navigationButton{
-    position:relative;
-    display: inline;
-    float: right;
-    margin: 4vw;
-    margin-top: 1vw;
+    display: inline-block; 
+    
+    margin-top: 12px; 
+    margin-right:5vw
 }
-.topSection{
-    height: 34vw;
+
+.badge{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center;
+    border-radius:50%;
+    border:2px solid #ccc!important;
+    background-color:transparent!important
 }
+
+.hoverWhite:hover{
+    color:#f9da03;
+    background-color: #f9da03!important;
+    cursor: pointer;
+}
+
+.mySlides{
+    display:none;
+    animation:fading 2.5s forwards ease-out;
+}
+.fading{
+    animation:fading 4s forwards}@keyframes fading{0%{opacity:0.5}50%{opacity:1}
+
+}
+.scrollContent{
+    
+    margin-left:auto;
+    margin-right:auto;
+    display:block
+}
+.leftButton{
+    float:left;
+}
+.rightButton{
+    float:right;
+}
+.hoverKhaki:hover{
+    color:#b4aa50!important;
+    cursor: pointer;
+}
+
 .topPicture{
     position:absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     width: 100%;
     z-index: -1;
@@ -95,28 +151,31 @@
 }
   
 .sticky + .content{
-    padding-top: 4vw;
+    padding-top: 125px;
 }
 
 .footer{
     padding: 1vw;
 }
 
-.logoLink{
-    position:relative; 
-    top: 25%; 
-    width: 19vw"
+.howToBar{
+    background-color: #f9da03;
+}
+.howToBox{
+    display:inline-block;
+    width: 300px; 
+    margin-right: 2vw;
 }
 
 .howToImages{
-    display: inline-block; 
-    margin: 2vw;
-    width: 100px;
-    position: relative;
-    bottom: 2.5vw
+    position:relative;
+    margin: 3vw;
+    bottom: 7vw
 }
+
 .howToImage{
     width: 100px;
+    height: 100px;
     margin: 0.5vw
 }
 
@@ -134,7 +193,16 @@
 }
  
 .heading{
-    margin: 0; 
-    font-size:4rem;
-    margin-bottom: 2vw
+    margin: 0;
+    font-size:3rem;
+    
+}
+.navigationBar{
+    background-color: #f9da03;
+    height: 2vw;
+}
+
+.footer{
+    height: 75px;
+    background-color: whitesmoke;
 }
