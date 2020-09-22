@@ -59,6 +59,10 @@
     margin-right:5vw
 }
 
+.uspsImage{
+    padding: 2vw;
+}
+
 .badge{
     background-color:#000;
     color:#fff;
@@ -195,10 +199,12 @@
 }
 
 .productBar{
-    background-color:#add8e6;
+    background-color:#60931c;
     padding-top: 3vw
     
 }
+
+ 
 .productBox{
     width:300px;
     background-color: rgb(182, 182, 212);
