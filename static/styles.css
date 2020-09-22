@@ -75,15 +75,26 @@
     background-color:transparent!important
 }
 
-.hoverWhite:hover{
+.yellow{
     color:#f9da03;
     background-color: #f9da03!important;
+    cursor: pointer;
+}
+
+.hoverYellow:hover{
+    color:#f9da03;
+    background-color: #f9da03!important;
+    cursor: pointer;
+}
+.hoverYellowButton:hover{
+    color:#f9da03;
     cursor: pointer;
 }
 
 .mySlides{
     display:none;
     animation:fading 2.5s forwards ease-out;
+    border-radius:100px;
 }
 .fading{
     animation:fading 4s forwards}@keyframes fading{0%{opacity:0.5}50%{opacity:1}
@@ -97,14 +108,13 @@
 }
 .leftButton{
     float:left;
+    cursor: pointer;
 }
 .rightButton{
     float:right;
-}
-.hoverYellow:hover{
-    color:#f9da03!important;
     cursor: pointer;
 }
+
 
 .topPicture{
     position:absolute;
