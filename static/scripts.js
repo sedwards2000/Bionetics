@@ -14,10 +14,12 @@ var slideIndex = 1;
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
+
 function selectDivs(n){
     slideIndex = n;
     showDivs(slideIndex);
 }
+
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -34,4 +36,16 @@ function showDivs(n) {
     y[i].classList.add("hoverYellow");  
   }
   y[slideIndex-1].classList.add("yellow");
+}
+
+var coll = document.getElementsByClassName("collapsibleButton");
+
+function expand(num){
+  coll[num].classList.toggle("active");
+  var content = coll[num].nextElementSibling;
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+  } 
 }
