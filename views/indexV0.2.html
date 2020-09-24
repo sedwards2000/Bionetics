@@ -9,7 +9,8 @@
 
 </head>
 
-<body class = "body" onload = "showDivs(slideIndex)">
+<body class = "body" onload = "onLoad()">
+    
     
     <header id = "myHeader" class = "header"><!--header bar contains logos, navigation and login system-->
 
@@ -29,46 +30,56 @@
         </div>
 
         <nav align = "center" class = "navigation"><!--page navigation-->
-            <nav style = "display:inline-block">
+            <nav id = "navBar" >
                 
                 <nav class = "navigationButton" >
                     <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" > About</a>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>
                     </div>
         
                 </nav>
                 <nav class = "navigationButton" >
                     <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" > Hair Test</a>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>
                     </div>
         
                 </nav>
                 <nav class = "navigationButton" >
                     <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" > medical conditions</a>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >medical conditions</a>
                     </div>
         
                 </nav>
                 <nav class = "navigationButton">
                     <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" > Testimonies</a>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>
                     </div>
         
                 </nav>
                 <nav class = "navigationButton" >
                     <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" > Contact us</a>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
                     </div>
         
                 </nav>
                 <nav class = "navigationButton" >
-                    <div  >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" > Shop</a>
+                    <div>
+                        <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
                     </div>
-        
                 </nav>
             </nav>
-           
+           <nav id = "sideNav">
+                <button class="openbtn" onclick="openNav()">☰ </button>
+           </nav>
+           <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>
+                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>
+                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >medical conditions</a>
+                <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>
+                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
+                <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
+          </div>
         </nav>
     </header>
    
@@ -102,7 +113,7 @@
             </div>
         </div>
             
-        <div >
+        <div id = "howToSection">
             <img src = "../static/images/backgroundFade.png" style = "width: 100%; position:relative; top: 13px">
             <div class = "howToBar">
                 <p align = "center" class = "heading"  style = "position:relative; bottom: 8vw "> How it works</p>
@@ -138,30 +149,30 @@
             <div>
                 <div class = "productBox">
                     <p>Online results + 15 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
                 </div>
                 <div  class = "productBox">
                     <p>Online results + 15 minute consultation + posted report</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
                 </div>
                 <div class = "productBox">
                     <p>Online results + 30 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
                 </div>
                 <div  class = "productBox">
                     <p>Online results + 30 minute consultation + posted report</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
                 </div>
                 <div class = "productBox">
                     <p>Test kit + online results + 15 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
                 </div>
                 <div  class = "productBox">
                     <p>Test kit + online results + posted report + 15 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
                 </div>
                 <div>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/" > Shop &#10095</a>
+                    <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" > Shop &#10095</a>
                 </div>
                 
             </div>
@@ -270,9 +281,8 @@
 
     <footer align="center" class = "footer" class = "footer">
         <div style = "padding: 1vw">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/Bionetics-Ltd-1401209133426495/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/bioneticsltd/" class="fa fa-instagram"></a>
         </div>
 		
         <div>

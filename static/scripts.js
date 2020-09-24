@@ -1,4 +1,9 @@
 window.onscroll = function() {myFunction()};
+function onLoad(){
+  showDivs(1);
+  sideMenu();
+}
+
 function myFunction() {
     var header = document.getElementById("myHeader");
     var sticky = header.offsetTop;
@@ -48,4 +53,25 @@ function expand(num){
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
   } 
+}
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+function sideMenu(){
+  
+  if(window.innerWidth < 1300){
+    document.getElementById("navBar").style.display = "none";
+    document.getElementById("sideNav").style.display = "inline-block";
+  }else{
+    document.getElementById("navBar").style.display = "inline-block";
+    document.getElementById("sideNav").style.display = "none";
+  }
 }
