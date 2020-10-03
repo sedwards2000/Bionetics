@@ -1,11 +1,13 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {headerMove()};
 function onLoad(){
   showDivs(1);
   sideMenu();
+ 
+  carousel();
 }
 
-function myFunction() {
-    var header = document.getElementById("myHeader");
+function headerMove() {
+    var header = document.getElementById("Header");
     var sticky = header.offsetTop;
     if (window.pageYOffset > sticky) {
         header.classList.add("sticky");
@@ -14,7 +16,7 @@ function myFunction() {
     }
 }
 
-var slideIndex = 1;
+var slideIndex = 4;
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -48,11 +50,27 @@ var coll = document.getElementsByClassName("collapsibleButton");
 function expand(num){
   coll[num].classList.toggle("active");
   var content = coll[num].nextElementSibling;
+
+  for (i = 0; i < coll.length; i++){
+    if( i != num){close(i)}
+  }
+  
   if (content.style.maxHeight){
     content.style.maxHeight = null;
   } else {
     content.style.maxHeight = content.scrollHeight + "px";
   } 
+  
+  
+}
+
+function close(num){
+  coll[num].classList.toggle("active");
+  var content = coll[num].nextElementSibling;
+
+  if (content.style.maxHeight){
+    content.style.maxHeight = null;
+  }
 }
 
 function openNav() {
@@ -67,11 +85,18 @@ function closeNav() {
 
 function sideMenu(){
   
-  if(window.innerWidth < 1300){
+  if(window.innerWidth < 1202){
     document.getElementById("navBar").style.display = "none";
     document.getElementById("sideNav").style.display = "inline-block";
   }else{
     document.getElementById("navBar").style.display = "inline-block";
     document.getElementById("sideNav").style.display = "none";
   }
+}
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  plusDivs(1)
+  setTimeout(carousel, 4000);// Change image every 2 seconds
 }

@@ -6,7 +6,9 @@
     color: #262d3a;
 
 }
-
+.logoBar{
+    background-color: white;
+}
 .heading{
     margin: 0;
     font-size:3rem;
@@ -21,10 +23,6 @@
 .header{
     z-index: 999;
     
-}
-
-.logoBar{
-    background-color: whitesmoke;
 }
 
 .logoBlock{
@@ -54,9 +52,9 @@
 }
 .navigationButton{
     display: inline-block; 
-    
     margin-top: 12px; 
-    margin-right:5vw
+    margin-right:2.5vw;
+    margin-left: 2.5vw
 }
 
 .uspsImage{
@@ -184,6 +182,7 @@
   
 .sticky + .content{
     padding-top: 125px;
+    
 }
 
 .footer{
@@ -192,7 +191,6 @@
 
 .howToBar{
     background-color: #f9da03;
-    
 }
 .howToBox{
     display:inline-block;
@@ -218,11 +216,14 @@
     padding-top: 3vw
     
 }
-
+.productImage{
+    display: inline-block;
+    height: 50px
+}
  
 .productBox{
-    width:300px;
-    background-color: rgb(182, 182, 212);
+    width:400px;
+    background-color: #b6b6d4;
     display:inline-block;
     border-radius: 10px;
     padding: 10px;
@@ -236,6 +237,7 @@
     border: none;
     outline: none;
     font-size: 1.5rem;
+    
     
 }
 .active, .collapsible:hover{
@@ -289,7 +291,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:#60931c;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -299,7 +301,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color:#262d3a;
     display: block;
     transition: 0.3s;
   }
@@ -324,8 +326,7 @@
     color:#262d3a;
     padding-bottom: 8px;
     border: none;
-    position:relative;
-    left: 45vw;
+   
 
   }
   
@@ -333,3 +334,29 @@
     background-color:#60931c;
   }
   
+  .FAQHeader{
+    position:relative;
+    bottom: 10vw; 
+    right: 35vw;
+  }
+  .FAQBox{
+    position: relative;
+    bottom: 6vw; 
+    left: 3vw; 
+    display: inline
+  }
+  .FAQQuestion{
+    width: 50%; 
+    display: inline-block
+  }
+
+  .loginBox{
+    background-color:#f9da03;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 3vw;
+  }
+
+  .loginInput{
+      border-radius: 10px
+  }

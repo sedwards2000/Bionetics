@@ -1,88 +1,71 @@
 <!DOCTYPE html>
-<script src ="../static/scripts.js"></script>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="description" content="Bionetics health test identifies underlying causes of illness. This health test is used for men&rsquo;s health, women&rsquo;s health, sickness, illness, head ache, stomach ache, pain, lethargy, bloated, bloating">
 	<meta name="keywords" content="Health test, hair analysis, hair test, health check, health screening, health testing, food intolerance test, pathogens test, toxins test, nutrition test, men&rsquo;s health, women&rsquo;s health, sickness, illness, head ache, stomach ache, pain, lethargy, bloated, bloating ">
     <link rel="stylesheet" href="../static/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src ="../static/scripts.js"></script>
 </head>
 
 <body class = "body" onload = "onLoad()">
-    
-    
-    <header id = "myHeader" class = "header"><!--header bar contains logos, navigation and login system-->
+
+    <header id = "Header" class = "header"><!--header bar contains logos, navigation and login system-->
 
         <div class = "logoBar"><!--logos + login button-->
             <div id = "logo Block" class = "logoBlock" > <!--logos-->
                 <a href="https://bionetics.co.uk/" class = "linkPlain">
                     <img src = "../static/images/Logo.jpg" alt = "Bionetics the key to natural wellbeing" class = "logos">
-                    <img src = "../static/images/15years.jpg" alt = "15 years of Bionetics Ltd" class = "logos">
                 </a>
             </div>
-            <nav class = "logInButton"><!--Log in button-->
-                <div >
-                    <a class = "linkPlain" href="https://bionetics.co.uk/" > Log In</a>
-                </div>
-        
-            </nav>
+            
+            
+            <img src = "../static/images/15years.jpg" alt = "15 years of Bionetics Ltd" class = "logos" style = "float:right">
         </div>
-
+    
         <nav align = "center" class = "navigation"><!--page navigation-->
             <nav id = "navBar" >
                 
-                <nav class = "navigationButton" >
-                    <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>
-                    </div>
-        
+                <nav class = "navigationButton" >            
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>        
+                </nav>
+                <nav class = "navigationButton" >                   
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>                 
                 </nav>
                 <nav class = "navigationButton" >
-                    <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>
-                    </div>
-        
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >Medical Conditions</a>                  
+                </nav>
+                <nav class = "navigationButton">                    
+                    <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>                    
                 </nav>
                 <nav class = "navigationButton" >
-                    <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >medical conditions</a>
-                    </div>
-        
+                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
                 </nav>
-                <nav class = "navigationButton">
-                    <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>
-                    </div>
-        
+                <nav class = "navigationButton" >                   
+                    <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
                 </nav>
-                <nav class = "navigationButton" >
-                    <div >
-                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
-                    </div>
-        
-                </nav>
-                <nav class = "navigationButton" >
-                    <div>
-                        <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
-                    </div>
+                <nav class = "navigationButton" >                   
+                    <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Log In</a>
                 </nav>
             </nav>
-           <nav id = "sideNav">
-                <button class="openbtn" onclick="openNav()">☰ </button>
+    
+           <nav id = "sideNav" style = "float:right; display: none">
+                <button class="openbtn" onclick="openNav()">Menu ☰ </button>
            </nav>
-           <div id="mySidebar" class="sidebar">
+    
+           <div align = "left" id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>
-                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >medical conditions</a>
+                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >Medical Conditions</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
                 <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
           </div>
         </nav>
     </header>
-   
+    
     <main class = "content">
         <div align = "center">
             <img src = "../static/images/resultsIn5Days.PNG" class = "uspsImage">
@@ -96,10 +79,10 @@
 
        <!--top image and text-->
         <div class="scrollContent" style="max-width:80%;">
-            <img class="mySlides" src="../static/images/intolerance.png" style="width:100%">
-            <img class="mySlides" src="../static/images/nutritionalItems.jpg" style="width:100%">
-            <img class="mySlides" src="../static/images/bloating.jpg" style="width:100%">
-            <img class="mySlides" src="../static/images/dinner.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/firstScrolling.png" style="width:100%">
+            <img class="mySlides" src="../static/images/secondScrolling.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/thirdScrolling.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/fourthScrolling.jpg" style="width:100%">
 
             <div align = "center" style ="display:inline-block; width:100%">
                 <div class="leftButton hoverYellowButton" onclick="plusDivs(-1)">&#10094;</div>
@@ -114,71 +97,104 @@
         </div>
             
         <div id = "howToSection">
+            
             <img src = "../static/images/backgroundFade.png" style = "width: 100%; position:relative; top: 13px">
             <div class = "howToBar">
-                <p align = "center" class = "heading"  style = "position:relative; bottom: 8vw "> How it works</p>
-                <div align = "center" class = "howToImages">
-                <div class = "howToBox">
-                    <img src = "../static/images/basket.png" class = "howToImage">
-                    <p >Select your test from the range below</p>
-                </div>
-                <div class = "howToBox">
-                    <img src = "../static/images/tweezers.png" class = "howToImage">
-                    <p>We need 4 strands of hair with the root attached</p>
-                </div>
-                <div class = "howToBox">
-                    <img src = "../static/images/envalope.png" class = "howToImage">
-                    <p>Send in the form with your sample</p>
-                </div>
-                <div class = "howToBox">
-                    <img src = "../static/images/phone.png" class = "howToImage">
-                    <p>arrange your 15 minute FREE consultation</p>
+                <div style = "position: relative; top:150px">
+                    <p align = "center" class = "heading"  style = "position:relative; bottom: 8vw "> How it works</p>
+                    <div align = "center" class = "howToImages">
+                        <div class = "howToBox">
+                            <img src = "../static/images/basket.png" class = "howToImage">
+                            <p >Select your test from the range below</p>
+                        </div>
+                        <div class = "howToBox">
+                            <img src = "../static/images/tweezers.png" class = "howToImage">
+                            <p>We need 4 strands of hair with the root attached</p>
+                        </div>
+                        <div class = "howToBox">
+                            <img src = "../static/images/envalope.png" class = "howToImage">
+                            <p>Send in the form with your sample</p>
+                        </div>
+                        <div class = "howToBox">
+                            <img src = "../static/images/phone.png" class = "howToImage">
+                            <p>arrange your 15 minute FREE consultation</p>
+                        </div>
+                    
+                    </div>
+                    <div align = "center" style = "position: relative; bottom: 5vw">
+                        <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+                    </div>
                 </div>
                 
             </div>
-            <div align = "center" style = "position: relative; bottom: 5vw">
-                <a class = "linkPlain"href="https://bionetics.co.uk/" > Learn more &#10095</a>
+            <img src = "../static/images/backgroundUpsideDown.png" style = "width: 100%; position:relative; ">
+        </div>
+
+        <div align = "center">
+
+            <img src = "../static/images/backgroundFadeGreen.png" style = "width: 100%; ">
+            <div style = "background-color: #60931c; position: relative; bottom: 13px ">
+                <p align = "center" class = "heading"> Our tests</p>
+                <div>
+                    <div class = "productBox">
+                        <img src = "../static/images/onlineReport.png" class = "productImage">
+                        <img src = "../static/images/phone2.png" class = "productImage">
+                        <p>Online results + 15 minute consultation</p>
+                        <p>£59.95</p>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
+                    </div>
+                    <div  class = "productBox">
+                        <img src = "../static/images/onlineReport.png" class = "productImage">
+                        <img src = "../static/images/phone2.png" class = "productImage">
+                        <img src = "../static/images/mailReport.jpg" class = "productImage">
+                        <p>Online results + 15 minute consultation + posted report</p>
+                        <p>£64.95</p>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
+                    </div>
+                    <div class = "productBox">
+                        <img src = "../static/images/onlineReport.png" class = "productImage">
+                        <img src = "../static/images/phone2.png" class = "productImage">
+                        <p>Online results + 30 minute consultation</p>
+                        <p>£89.95</p>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
+                    </div>
+                    <div  class = "productBox">
+                        <img src = "../static/images/onlineReport.png" class = "productImage">
+                        <img src = "../static/images/phone2.png" class = "productImage">
+                        <img src = "../static/images/mailReport.jpg" class = "productImage">
+                        <p>Online results + 30 minute consultation + posted report</p>
+                        <p>£94.95</p>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
+                    </div>
+                    <div class = "productBox">
+                        <img src = "../static/images/onlineReport.png" class = "productImage">
+                        <img src = "../static/images/phone2.png" class = "productImage">
+                        <img src = "../static/images/tweezers.png" class = "productImage">
+                        <p>Online results + 15 minute consultation + test kit  </p>
+                        <p>£69.95</p>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
+                    </div>
+                    <div  class = "productBox">
+                        <img src = "../static/images/onlineReport.png" class = "productImage">
+                        <img src = "../static/images/phone2.png" class = "productImage">
+                        <img src = "../static/images/mailReport.jpg" class = "productImage">
+                        <img src = "../static/images/tweezers.png" class = "productImage">
+                        <p>Online results + 15 minute consultation + posted report + test kit </p>
+                        <p>£74.95</p>
+                        <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
+                    </div>
+                    <div>
+                        <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" > Shop &#10095</a>
+                    </div>
+                    
+                </div>
+               
             </div>
+            <img src = "../static/images/backgroundFadeGreenUpsideDown.png" style = "width: 100%; position: relative; bottom: 13px">
             
-            </div>
             
         </div>
 
-        <div align = "center" class = "productBar">
-            <p align = "center" class = "heading"  > Our tests</p>
-            <div>
-                <div class = "productBox">
-                    <p>Online results + 15 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
-                </div>
-                <div  class = "productBox">
-                    <p>Online results + 15 minute consultation + posted report</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
-                </div>
-                <div class = "productBox">
-                    <p>Online results + 30 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
-                </div>
-                <div  class = "productBox">
-                    <p>Online results + 30 minute consultation + posted report</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
-                </div>
-                <div class = "productBox">
-                    <p>Test kit + online results + 15 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
-                </div>
-                <div  class = "productBox">
-                    <p>Test kit + online results + posted report + 15 minute consultation</p>
-                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/applicationonline.htm" > Learn more &#10095</a>
-                </div>
-                <div>
-                    <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" > Shop &#10095</a>
-                </div>
-                
-            </div>
-            
-            <img src = "../static/images/backgroundFadeBlue.png" style = "width: 100%; position: relative; top: 15px">
-        </div>
         <div align = "center" class = "testimonieBlock"><!--Testimonies-->
             
             <div class = "testimonieBox">
@@ -224,11 +240,11 @@
         <div id = "FAQs" style = "background-color:  #f9da03">
             <img src = "../static/images/swoop.png" style = " width: 100%; position:relative; bottom: 13px"">
             <div>
-                <div>
-                    <p align = "center" class = "heading" style = "position:relative; bottom: 10vw; right: 35vw" > FAQs</p>
+                <div class = "FAQHeader">
+                    <p align = "center" class = "heading"  > FAQs</p>
                 </div>
-                <div style = "position: relative; bottom: 6vw; left: 3vw">
-                    <div>
+                <div class = "FAQBox" >
+                    <div class = "FAQQuestion">
                         <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(0)">Can I complete a hair test on a child?</button>
                         <div class="collapsableContent">
                             <p>Children can complete a hair sensitivity test once they reach 5 years old. This is due to the changes in their immune system, the importance of 
@@ -236,7 +252,7 @@
                                 positives in their test results. However it is up to the parents or guardians if they would still like to proceed knowing this.</p>
                         </div>
                     </div>
-                    <div>
+                    <div  class = "FAQQuestion">
                         <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(1)">What is Bioresonance Hair testing?</button>
                         <div class="collapsableContent">
                             <p>Bioresonance therapy is a complimentary medicine using a device that captures and diagnoses electromagnetic signals coming from the body. 
@@ -249,7 +265,7 @@
                             </p>
                         </div>
                     </div>
-                    <div>
+                    <div  class = "FAQQuestion">
                         <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(2)">Is there anything additional to pay?</button>
                         <div class="collapsableContent">
                             <p>If you've purchased one of our hair testing kits, you will have to pay the cost of the postage back to the processing centre here in the UK. 
@@ -259,7 +275,7 @@
                             </p>
                             </div>
                     </div>
-                    <div>
+                    <div class = "FAQQuestion">
                         <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(3)">How much should postage cost?</button>
                         <div class="collapsableContent">
                             <p>When you send your samples to us, please remember to attach the correct postage amount to your envelope or outer wrap. 
@@ -268,7 +284,7 @@
                             </p>
                         </div>
                     </div>
-                    <div  >
+                    <div  style = "display: inline-block">
                         <a class = "linkPlain"href="https://bionetics.co.uk/" style = "position:relative; top: 2vw; padding: 18px"> More FAQs &#10095</a>
                     </div>
                 </div>
@@ -279,12 +295,28 @@
         
     </main>
 
-    <footer align="center" class = "footer" class = "footer">
+    <footer align="center" class = "footer" >
+        
         <div style = "padding: 1vw">
             <a href="https://www.facebook.com/Bionetics-Ltd-1401209133426495/" class="fa fa-facebook"></a>
             <a href="https://www.instagram.com/bioneticsltd/" class="fa fa-instagram"></a>
         </div>
+        <div>
+            <img src = "../static/images/CMA_LOGO.jpg" >
+            <div style = "display: inline-block; width: 400px; position: relative; bottom: 15px">
+            
+                <div style = "display: inline-block">
+                    <a class = "linkPlain" href="mailto:info@bionetics.co.uk">info@bionetics.co.uk</a>
+                </div>
+                <div style = "display: inline-block">
+                    <a class = "linkPlain" href="tel:0845 456 0570">0845 456 0570 – 9am-5pm Mon-Fri</a>
+                </div>
+            
+            </div>
+            <img src = "../static/images/payments.jpg" >
+        </div>
 		
+        <br></br>
         <div>
             &copy;Bionetics 2005 | <a  href="bionetics/termsandconditions.htm">terms &amp; conditions</a> | <a  href="bionetics/privacy.htm">privacy</a> 
             <p class = "legalText" >Disclaimer: The services offered on this website are not diagnostic or designed to treat or cure any disease, illness or condition. 
