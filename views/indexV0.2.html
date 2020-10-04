@@ -79,10 +79,10 @@
 
        <!--top image and text-->
         <div class="scrollContent" style="max-width:80%;">
-            <img class="mySlides" src="../static/images/firstScrolling.png" style="width:100%">
-            <img class="mySlides" src="../static/images/secondScrolling.jpg" style="width:100%">
-            <img class="mySlides" src="../static/images/thirdScrolling.jpg" style="width:100%">
-            <img class="mySlides" src="../static/images/fourthScrolling.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/firstImageText.png" style="width:100%">
+            <img class="mySlides" src="../static/images/secondImageText.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/thirdImageText.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/fourthImageText.jpg" style="width:100%">
 
             <div align = "center" style ="display:inline-block; width:100%">
                 <div class="leftButton hoverYellowButton" onclick="plusDivs(-1)">&#10094;</div>
@@ -312,60 +312,69 @@
             </div>
         </div>
 
-        <div id = "FAQs" style = "background-color:  #f9da03">
+        <div id = "FAQs" style = "background-color:  #f9da03; display: block">
             <img src = "../static/images/swoop.png" style = " width: 100%; position:relative; bottom: 13px"">
-            <div>
-                <div class = "FAQHeader">
-                    <p align = "center" class = "heading"  > FAQs</p>
+            
+            <div class = "FAQHeader">
+                <p align = "center" class = "heading"  > FAQs</p>
+            </div>
+            <div class = "FAQBox" style = "display: inline-block; width: 435px;">
+                <div class = "FAQQuestion">
+                    <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(0)">Can I complete a hair test on a child?</button>
+                    <div class="collapsableContent">
+                        <p>Children can complete a hair sensitivity test once they reach 5 years old. This is due to the changes in their immune system, the importance of 
+                            eating a varied diet and because infants have not yet built up their full tolerance levels to items and this could highlight false 
+                            positives in their test results. However it is up to the parents or guardians if they would still like to proceed knowing this.
+                        </p>
+                    </div>
                 </div>
-                <div class = "FAQBox" >
-                    <div class = "FAQQuestion">
-                        <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(0)">Can I complete a hair test on a child?</button>
-                        <div class="collapsableContent">
-                            <p>Children can complete a hair sensitivity test once they reach 5 years old. This is due to the changes in their immune system, the importance of 
-                                eating a varied diet and because infants have not yet built up their full tolerance levels to items and this could highlight false 
-                                positives in their test results. However it is up to the parents or guardians if they would still like to proceed knowing this.</p>
+                <div  class = "FAQQuestion">
+                    <button id = "FAQ2" type="button" class="collapsibleButton" onclick = "expand(1)">What is Bioresonance Hair testing?</button>
+                    <div class="collapsableContent">
+                        <p>Bioresonance therapy is a complimentary medicine using a device that captures and diagnoses electromagnetic signals coming from the body. 
+                            Developed in the 1970’s by a team of medical doctors and bio-physicists, these devices are in regular use in over 26 different countries.
+                            Bioresonance therapy is one of a number of procedures including homeopathy, acupuncture and other naturopathic procedures within the area 
+                            of empirical healing. Bioresonance therapy was invented in Germany in 1977 by Franz Morell and his son-in-law, engineer Erich Rasche. 
+                            The concept of bioresonance is that the machine’s electromagnetic waves create a resonance in our body’s cells which, in turn, brings 
+                            about the desired effects. BioResonance is a safe and gentle, non-invasive alternative therapeutic technique designed on the 
+                            premise that all particles of matter generate electromagnetic energy.
+                        </p>
+                    </div>
+                </div>
+                <div  class = "FAQQuestion">
+                    <button id = "FAQ3" type="button" class="collapsibleButton" onclick = "expand(2)">Is there anything additional to pay?</button>
+                    <div class="collapsableContent">
+                        <p>If you've purchased one of our hair testing kits, you will have to pay the cost of the postage back to the processing centre here in the UK. 
+                            If you've purchased a blood intolerance test, you will receive a free post return envelope in the kit which is sent to you. We try to keep our costs 
+                            as low as possible (by not sending out physical hair testing kits) so that we are able to offer such a comprehensive and accurate test at the price 
+                            offered. Please ensure the correct postage amount has been paid as we are not liable for any extra charges.
+                        </p>
                         </div>
+                </div>
+                <div class = "FAQQuestion">
+                    <button id = "FAQ4" type="button" class="collapsibleButton" onclick = "expand(3)">How much should postage cost?</button>
+                    <div class="collapsableContent">
+                        <p>When you send your samples to us, please remember to attach the correct postage amount to your envelope or outer wrap. 
+                        If you do not attach the correct postage, the samples may not reach our testing lab. Therefore, you may need to resend your 
+                        samples to us again using the correct postage amount. For more information please visit our International Service page.
+                        </p>
                     </div>
-                    <div  class = "FAQQuestion">
-                        <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(1)">What is Bioresonance Hair testing?</button>
-                        <div class="collapsableContent">
-                            <p>Bioresonance therapy is a complimentary medicine using a device that captures and diagnoses electromagnetic signals coming from the body. 
-                                Developed in the 1970’s by a team of medical doctors and bio-physicists, these devices are in regular use in over 26 different countries.
-                                Bioresonance therapy is one of a number of procedures including homeopathy, acupuncture and other naturopathic procedures within the area 
-                                of empirical healing. Bioresonance therapy was invented in Germany in 1977 by Franz Morell and his son-in-law, engineer Erich Rasche. 
-                                The concept of bioresonance is that the machine’s electromagnetic waves create a resonance in our body’s cells which, in turn, brings 
-                                about the desired effects. BioResonance is a safe and gentle, non-invasive alternative therapeutic technique designed on the 
-                                premise that all particles of matter generate electromagnetic energy.
-                            </p>
-                        </div>
-                    </div>
-                    <div  class = "FAQQuestion">
-                        <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(2)">Is there anything additional to pay?</button>
-                        <div class="collapsableContent">
-                            <p>If you've purchased one of our hair testing kits, you will have to pay the cost of the postage back to the processing centre here in the UK. 
-                                If you've purchased a blood intolerance test, you will receive a free post return envelope in the kit which is sent to you. We try to keep our costs 
-                                as low as possible (by not sending out physical hair testing kits) so that we are able to offer such a comprehensive and accurate test at the price 
-                                offered. Please ensure the correct postage amount has been paid as we are not liable for any extra charges.
-                            </p>
-                            </div>
-                    </div>
-                    <div class = "FAQQuestion">
-                        <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(3)">How much should postage cost?</button>
-                        <div class="collapsableContent">
-                            <p>When you send your samples to us, please remember to attach the correct postage amount to your envelope or outer wrap. 
-                            If you do not attach the correct postage, the samples may not reach our testing lab. Therefore, you may need to resend your 
-                            samples to us again using the correct postage amount. For more information please visit our International Service page.
-                            </p>
-                        </div>
-                    </div>
-                    <div  style = "display: inline-block">
-                        <a class = "linkPlain"href="https://bionetics.co.uk/" style = "position:relative; top: 2vw; padding: 18px"> More FAQs &#10095</a>
+                </div>
+                <div class = "FAQQuestion">
+                    <button id = "FAQ5" type="button" class="collapsibleButton" onclick = "expand(4)">How much should postage cost?</button>
+                    <div class="collapsableContent">
+                        <p>When you send your samples to us, please remember to attach the correct postage amount to your envelope or outer wrap. 
+                        If you do not attach the correct postage, the samples may not reach our testing lab. Therefore, you may need to resend your 
+                        samples to us again using the correct postage amount. For more information please visit our International Service page.
+                        </p>
                     </div>
                 </div>
                 
             </div>
-           
+            <div>
+                <a class = "linkPlain"href="https://bionetics.co.uk/" style = "position:relative; bottom: 2vw; left: 4vw"> More FAQs &#10095</a>
+            </div>
+            
         </div>
         
     </main>

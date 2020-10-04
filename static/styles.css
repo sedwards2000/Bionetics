@@ -246,13 +246,14 @@
     background-color: #f9da03;
 }
 .collapsableContent{
-    width: 50%;
+    width: 300%;
     padding: 0 18px;
     font-size: 1rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color:#f9da03;
+    
 }
 .fa {
     padding: 10px;
@@ -348,7 +349,7 @@
     display: inline
   }
   .FAQQuestion{
-    width: 50%; 
+    
     display: inline-block
   }
 
@@ -360,5 +361,5 @@
   }
 
   .loginInput{
-      border-radius: 10px
+    border-radius: 10px
   }

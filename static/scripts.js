@@ -48,11 +48,11 @@ function showDivs(n) {
 var coll = document.getElementsByClassName("collapsibleButton");
 
 function expand(num){
-  coll[num].classList.toggle("active");
+ 
   var content = coll[num].nextElementSibling;
 
   for (i = 0; i < coll.length; i++){
-    if( i != num){close(i)}
+    if( i != num ){close(i)}
   }
   
   if (content.style.maxHeight){
@@ -61,11 +61,11 @@ function expand(num){
     content.style.maxHeight = content.scrollHeight + "px";
   } 
   
-  
 }
 
+
 function close(num){
-  coll[num].classList.toggle("active");
+  
   var content = coll[num].nextElementSibling;
 
   if (content.style.maxHeight){
