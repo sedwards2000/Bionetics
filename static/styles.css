@@ -190,7 +190,7 @@
 }
 
 .howToBar{
-    background-color: #f9da03;
+    background-color: #60931c;
 }
 .howToBox{
     display:inline-block;
@@ -210,7 +210,9 @@
     height: 100px;
     margin: 0.5vw
 }
-
+.WhatWeTestFor{
+    background-color: #f9da03;
+}
 .productBar{
     background-color:#60931c;
     padding-top: 3vw

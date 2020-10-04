@@ -98,5 +98,5 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   plusDivs(1)
-  setTimeout(carousel, 4000);// Change image every 2 seconds
+  setTimeout(carousel, 3000);// Change image every 2 seconds
 }
