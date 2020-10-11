@@ -10,7 +10,7 @@
 </head>
 
 <body class = "body" onload = "onLoad()">
-
+<body onresize="sideMenu()"></body>
     <header id = "Header" class = "header"><!--header bar contains logos, navigation and login system-->
 
         <div class = "logoBar"><!--logos + login button-->
@@ -33,9 +33,6 @@
                 <nav class = "navigationButton" >                   
                     <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>                 
                 </nav>
-                <nav class = "navigationButton" >
-                    <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >Medical Conditions</a>                  
-                </nav>
                 <nav class = "navigationButton">                    
                     <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>                    
                 </nav>
@@ -48,20 +45,23 @@
                 <nav class = "navigationButton" >                   
                     <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Log In</a>
                 </nav>
+                <nav id = "nav" class = "navigationButton" >                   
+                    <button class="openButton" onclick="toggleNav()">☰ </button>
+                </nav>
             </nav>
-    
-           <nav id = "sideNav" style = "float:right; display: none">
-                <button class="openbtn" onclick="openNav()">Menu ☰ </button>
+            
+            <nav id = "sideNav" style = "float:right; display: none">
+                <button class="openButton" onclick="toggleNav()" style = "position: relative; top: 1vw">Menu ☰ </button>
            </nav>
     
            <div align = "left" id="mySidebar" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>
-                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >Medical Conditions</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>
                 <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
                 <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
+                <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Log In</a>
           </div>
         </nav>
     </header>
@@ -82,7 +82,10 @@
             <img class="mySlides" src="../static/images/firstImageText.png" style="width:100%">
             <img class="mySlides" src="../static/images/secondImageText.jpg" style="width:100%">
             <img class="mySlides" src="../static/images/thirdImageText.jpg" style="width:100%">
-            <img class="mySlides" src="../static/images/fourthImageText.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/fouthImageText.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/fifthImageText.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/sixthImageText.jpg" style="width:100%">
+            <img class="mySlides" src="../static/images/seventhImageText.jpg" style="width:100%">
 
             <div align = "center" style ="display:inline-block; width:100%">
                 <div class="leftButton hoverYellowButton" onclick="plusDivs(-1)">&#10094;</div>
@@ -92,30 +95,35 @@
                 <span class="badge hoverYellow" onclick="selectDivs(2)">2</span>
                 <span class="badge hoverYellow" onclick="selectDivs(3)">3</span>
                 <span class="badge hoverYellow" onclick="selectDivs(4)">4</span>
+                <span class="badge hoverYellow" onclick="selectDivs(5)">5</span>
+                <span class="badge hoverYellow" onclick="selectDivs(6)">6</span>
+                <span class="badge hoverYellow" onclick="selectDivs(7)">7</span>
 
             </div>
         </div>
         <div id = "What we test for">
             
             <img src = "../static/images/backgroundFade.png" style = "width: 100%; position:relative; top: 13px">
-            <div class = "WhatWeTestFor">
+            <div class = "WhatWeTestFor" >
                 <div style = "position: relative; top:150px">
                     <p align = "center" class = "heading"  style = "position:relative; bottom: 8vw "> What we test for</p>
                     <div align = "center" class = "howToImages">
-                        <div class = "howToBox">
-                            <img src = "../static/images/basket.png" class = "howToImage">
+                        <div class = "howToBox" style = "position: relative; bottom: 25px">
+                            <img src = "../static/images/foods.png" class = "howToImage" >
                             <p >115 foods of a typical European diet</p>
+                            
                         </div>
                         <div class = "howToBox">
-                            <img src = "../static/images/tweezers.png" class = "howToImage">
+                            <img src = "../static/images/pathogen.png" class = "howToImage">
                             <p>8 pathogenic stresses</p>
+                            <br>
                         </div>
                         <div class = "howToBox">
                             <img src = "../static/images/toxins.png" class = "howToImage">
-                            <p>Toxins - including metals, chemicals and hydrocarbons</p>
+                            <p>Toxins - including toxic metals, chemicals and hydrocarbons</p>
                         </div>
                         <div class = "howToBox">
-                            <img src = "../static/images/phone.png" class = "howToImage">
+                            <img src = "../static/images/nutrition.png" class = "howToImage">
                             <p>Nutritional Requirements - amino acids, vitamins and minerals</p>
                         </div>
                     
@@ -126,13 +134,11 @@
                 </div>
                 
             </div>
-            <img src = "../static/images/backgroundFadeUpsideDown.png" style = "width: 100%; position:relative; ">
             
         </div>
-        
+        <img src ="../static/images/swoopsWithImage.png" style = "width: 100%">
         <div id = "howToSection">
             
-            <img src = "../static/images/backgroundFadeGreen.png" style = "width: 100%; position:relative; top: 13px">
             <div class = "howToBar">
                 <div style = "position: relative; top:150px">
                     <p align = "center" class = "heading"  style = "position:relative; bottom: 8vw "> How it works</p>
@@ -161,7 +167,7 @@
                 </div>
                 
             </div>
-            <img src = "../static/images/backgroundFadeUpsideDownGreen.png" style = "width: 100%; position:relative; ">
+            <img src = "../static/images/backgroundFadeUpsideDownGreen.png" style = "width: 100%; position:relative; z-index: -1 ">
         </div>
         
         <div align = "center">
@@ -318,7 +324,7 @@
             <div class = "FAQHeader">
                 <p align = "center" class = "heading"  > FAQs</p>
             </div>
-            <div class = "FAQBox" style = "display: inline-block; width: 435px;">
+            <div class = "FAQBox" style = "display: inline-block; ">
                 <div class = "FAQQuestion">
                     <button id = "FAQ1" type="button" class="collapsibleButton" onclick = "expand(0)">Can I complete a hair test on a child?</button>
                     <div class="collapsableContent">

@@ -2,7 +2,6 @@ window.onscroll = function() {headerMove()};
 function onLoad(){
   showDivs(1);
   sideMenu();
- 
   carousel();
 }
 
@@ -16,7 +15,7 @@ function headerMove() {
     }
 }
 
-var slideIndex = 4;
+var slideIndex = 7;
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -73,9 +72,15 @@ function close(num){
   }
 }
 
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+function toggleNav() {
+  if(document.getElementById("mySidebar").style.width == "250px"){
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }else{
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
 }
 
 function closeNav() {
@@ -85,7 +90,7 @@ function closeNav() {
 
 function sideMenu(){
   
-  if(window.innerWidth < 1202){
+  if(window.innerWidth < 1023){
     document.getElementById("navBar").style.display = "none";
     document.getElementById("sideNav").style.display = "inline-block";
   }else{
