@@ -66,7 +66,10 @@
     transition: 0.5s;
     padding-top: 60px;
 }
-  
+.sideBarOptions{
+    color:#60931c;
+    text-decoration: none;
+}
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -77,7 +80,7 @@
 }
   
 .sidebar a:hover {
-    color: #f1f1f1;
+    color: #f9da03;
 }
   
 .sidebar .closebtn {
@@ -102,6 +105,8 @@
 .linkPlain:hover, .openButton:hover {
     color:#60931c;
 }
+
+
 .uspsImage{
     padding: 2vw;
 }
@@ -124,7 +129,7 @@
     cursor: pointer;
 }
 
-.hoverYellow:hover{
+.hoverYellow1:hover{
     color:#f9da03;
     background-color: #f9da03!important;
     cursor: pointer;
@@ -188,7 +193,7 @@
 .testimonieBox{
     height: 300px;
     margin: 4vw; 
-    margin-top: 2.5vw;
+    margin-top: 5vw;
     padding: 1vw;
     display: inline-block; 
     border-radius: 50px;
@@ -199,6 +204,10 @@
     text-decoration: none;
     color: #1e1e1e;
    
+}
+.linkPlainGreen{
+    text-decoration: none;
+    color: #1e1e1e;
 }
 
 .boxLink {
@@ -236,6 +245,7 @@
 
 .howToBar{
     background-color: #60931c;
+    padding-bottom: 150px
 }
 .howToBox{
     display:inline-block;
@@ -257,7 +267,6 @@
 }
 .WhatWeTestFor{
     background-color: #f9da03;
-  
     padding-bottom: 150px
 }
 .productBar{
@@ -311,13 +320,13 @@
 }
   
 .fa:hover {
-    opacity: 0.7;
+    color:#f9da03;
 }
   
  
 .fa-facebook {
-    background: #3B5998;
-    color: white;
+    background:whitesmoke;
+    color: black;
 }
   
 .fa-twitter {
@@ -325,8 +334,8 @@
     color: white;
 }
 .fa-instagram {
-    background: #125688;
-    color: white;
+    background: whitesmoke;
+    color:black;
   }
   
 .footer{
@@ -360,4 +369,12 @@
 
 .loginInput{
     border-radius: 10px
+}
+
+.hoverYellow2:hover{
+    color:#f9da03;
+}
+
+.hoverGreen:hover{
+    color:#60931c;
 }

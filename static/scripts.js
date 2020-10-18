@@ -71,21 +71,21 @@ function close(num){
     content.style.maxHeight = null;
   }
 }
-
+var options = document.getElementsByClassName("sideBarOptions");
 function toggleNav() {
   if(document.getElementById("mySidebar").style.width == "250px"){
+    for(i= 0; i < options.length;i++){
+      options[i].style.display = "none";
+    }
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    
   }else{
     document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    for(i= 0; i < options.length;i++){
+      options[i].style.display = "block";
+    }
   }
   
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
 }
 
 function sideMenu(){
