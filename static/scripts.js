@@ -73,14 +73,14 @@ function close(num){
 }
 var options = document.getElementsByClassName("sideBarOptions");
 function toggleNav() {
-  if(document.getElementById("mySidebar").style.width == "250px"){
+  if(document.getElementById("mySidebar").style.width == "200px"){
     for(i= 0; i < options.length;i++){
       options[i].style.display = "none";
     }
     document.getElementById("mySidebar").style.width = "0";
     
   }else{
-    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("mySidebar").style.width = "200px";
     for(i= 0; i < options.length;i++){
       options[i].style.display = "block";
     }
