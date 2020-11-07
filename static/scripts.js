@@ -15,7 +15,7 @@ function headerMove() {
     }
 }
 
-var slideIndex = 7;
+var slideIndex = 8;
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
