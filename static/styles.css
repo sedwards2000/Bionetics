@@ -280,7 +280,7 @@
 }
  
 .productBox{
-    width:400px;
+    width:450px;
     background-color: #ffffff;
     display:inline-block;
     border-radius: 200px;
@@ -288,6 +288,9 @@
     margin: 3vw
 }
 
+.productText{
+    height:84px;
+}
 .collapsibleButton {
     background-color:#f9da03;
     cursor: pointer;
