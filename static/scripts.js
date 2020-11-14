@@ -62,7 +62,6 @@ function expand(num){
   
 }
 
-
 function close(num){
   
   var content = coll[num].nextElementSibling;
@@ -70,6 +69,7 @@ function close(num){
   if (content.style.maxHeight){
     content.style.maxHeight = null;
   }
+
 }
 var options = document.getElementsByClassName("sideBarOptions");
 function toggleNav() {
@@ -103,5 +103,5 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   plusDivs(1)
-  setTimeout(carousel, 3000);// Change image every 2 seconds
+  setTimeout(carousel, 3000);// Change image every 3 seconds
 }
