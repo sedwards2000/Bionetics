@@ -398,4 +398,14 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.loginOptions{
+    display: inline-block;
+    background-color: #60931c;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 50px;
+    width: 200px
 }

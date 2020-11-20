@@ -1,13 +1,23 @@
-<header id = "myHeader" class = "header"><!--header bar contains logos, navigation and login system-->
+<header id = "Header" class = "header"><!--header bar contains logos, navigation and login system-->
 
     <div class = "logoBar"><!--logos + login button-->
         <div id = "logo Block" class = "logoBlock" > <!--logos-->
-            <a href="https://bionetics.co.uk/" class = "linkPlain">
-                <img src = "../static/images/Logo.jpg" alt = "Bionetics the key to natural wellbeing" class = "logos">
+            <a href="../views/indexV0.2.html" class = "linkPlain">
+                <img src = "../static/images/Logo.png" alt = "Bionetics the key to natural wellbeing" class = "logos">
             </a>
         </div>
         
-        
+            <div style = "display: inline-block; width: 400px; position: relative; bottom: 15px">
+            
+                <div style = "display: inline-block">
+                    <a class = "linkPlain" href="mailto:info@bionetics.co.uk">info@bionetics.co.uk</a>
+                </div>
+                <div style = "display: inline-block">
+                    <a class = "linkPlain" href="tel:0845 456 0570">0845 456 0570 – 9am-5pm Mon-Fri</a>
+                </div>
+            
+            </div>
+           
         <img src = "../static/images/15years.jpg" alt = "15 years of Bionetics Ltd" class = "logos" style = "float:right">
     </div>
 
@@ -18,10 +28,7 @@
                 <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>        
             </nav>
             <nav class = "navigationButton" >                   
-                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>                 
-            </nav>
-            <nav class = "navigationButton" >
-                <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >Medical Conditions</a>                  
+                <a class = "linkPlain"href="../views/payingOptions.html" >Hair Test</a>                 
             </nav>
             <nav class = "navigationButton">                    
                 <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>                    
@@ -33,22 +40,25 @@
                 <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
             </nav>
             <nav class = "navigationButton" >                   
-                <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Log In</a>
+                <a class = "linkPlain"href="../views/login.html" >Login</a>
+            </nav>
+            <nav id = "nav" class = "navigationButton" >                   
+                <button class="openButton" onclick="toggleNav()">☰</button>
             </nav>
         </nav>
-
-       <nav id = "sideNav" style = "float:right; display: none">
-            <button class="openbtn" onclick="openNav()">Menu ☰ </button>
+        
+        <nav id = "sideNav" style = "float:right; display: none">
+            <button class="openButton" onclick="toggleNav()" style = "position: relative; top: 1vw">Menu ☰</button>
        </nav>
 
        <div align = "left" id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>
-            <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/application.asp" >Hair Test</a>
-            <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/conditions.htm" >Medical Conditions</a>
-            <a class = "linkPlain"href="https://bionetics.co.uk/" >Testimonies</a>
-            <a class = "linkPlain"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
-            <a class = "linkPlain"href="https://bioneticsnutrition.co.uk/" >Shop</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
+            <a class = "sideBarOptions"href="https://bionetics.co.uk/bionetics/aboutbionetics.htm" >About</a>
+            <a class = "sideBarOptions"href="../views/payingOptions.html" >Hair Test</a>
+            <a class = "sideBarOptions"href="https://bionetics.co.uk/" >Testimonies</a>
+            <a class = "sideBarOptions"href="https://bionetics.co.uk/bionetics/contactus.htm" >Contact us</a>
+            <a class = "sideBarOptions"href="https://bioneticsnutrition.co.uk/" >Shop</a>
+            <a class = "sideBarOptions"href="../views/login.html" >Login</a>
       </div>
     </nav>
 </header>
