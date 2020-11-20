@@ -99,9 +99,7 @@ function sideMenu(){
   }
 }
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
+function carousel() { 
   plusDivs(1)
   setTimeout(carousel, 3000);// Change image every 3 seconds
 }
